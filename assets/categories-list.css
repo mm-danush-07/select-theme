@@ -1,0 +1,58 @@
+.button--simple-move {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  min-width: auto;
+  min-height: auto;
+  background: none;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: var(--font-heading-line-height);
+  color: #838282;
+  overflow: visible;
+}
+.button--simple-move:after {
+  display: none;
+}
+
+.button--simple-move span:first-child {
+  position: relative;
+  word-break: break-word;
+  padding: 0.2rem 0;
+}
+.button--simple-move span:first-child::after {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0.1rem;
+  background-color: #181818;
+  transition: width 0.25s;
+}
+.button--simple-move span:last-child {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+.button--simple-move .icon {
+  margin-left: 0.6rem;
+  color: #838282;
+}
+.button--simple-move:hover span:first-child::after {
+  width: 100%;
+}
+
+.custom-collections-list__section-header {
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.title-wrapper h2 {
+  margin: 0;
+}

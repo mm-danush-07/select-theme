@@ -1,75 +1,47 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+    "custom_image_banner_GcwwPC": {
+      "type": "custom-Image-banner",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "padding_top": 94,
+        "padding_bottom": 68,
+        "image": "shopify:\/\/shop_images\/hero-image.webp",
+        "image_mobile": "shopify:\/\/shop_images\/hero-image.webp",
+        "image_position": "right",
+        "background_color": "#ffffff",
+        "heading_text": "Wear the Story of Every Moment with Distinction",
+        "heading_text_color": "#000000",
+        "paragraph_text": "<p>Each piece speaks of moments lived, memories made, and a future of distinction.<\/p>",
+        "paragraph_text_color": "#000000",
+        "button_text": "SHOP  SHIRTS",
+        "button_link": "shopify:\/\/products\/4k-ultra-hd-chromecast-tv",
+        "secondary_button_text": "SHOP TOPS",
+        "secondary_button_link": "shopify:\/\/products\/black-robotic-d8-max-vacuum-cleaner",
+        "text_position": "bottom",
+        "text_alignment": "start"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "custom_product_slider_XaQnQM": {
+      "type": "custom-product-slider",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "section_heading": "Individual Styles Redefined",
+        "product_list": [
+          "black-stripe-spring-oxford-shirt",
+          "denim-chore-coat-black",
+          "columbia-tee-worn-olive",
+          "chore-coat-brown-duck",
+          "carhartt-coat-black",
+          "gritty-jackson-black-forest",
+          "highland-tee-white",
+          "highland-tee-worn-black"
+        ],
+        "padding_top": 0,
+        "padding_bottom": 64
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "custom_image_banner_GcwwPC",
+    "custom_product_slider_XaQnQM"
   ]
 }

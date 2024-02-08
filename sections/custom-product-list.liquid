@@ -1,0 +1,90 @@
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="product-list padding-{{ section.id }}">
+  <div class="page-width">
+    {% if section.settings.section_heading != blank %}
+      <h2 class="product-list__heading">{{ section.settings.section_heading }}</h2>
+    {% endif %}
+
+    <div class="grid grid--1-col grid--2-col-tablet grid--4-col-desktop">
+      {% for product in section.settings.product_list %}
+        <div class="grid__item">
+          {% render 'product-card', product: product, section_id: section.id %}
+        </div>
+      {% else %}
+        {% for i in (1..5) %}
+          <div class="grid__item">
+            <div class="media media--square">
+              {{ 'product-' | append: i | placeholder_svg_tag }}
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Product list",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section heading",
+        "default": "Our Bestsellers"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Products",
+        "limit": 12
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }
+    ],
+    "presets": [{
+        "name": "Product list"
+    }]
+  }
+{% endschema %}

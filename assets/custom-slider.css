@@ -1,0 +1,80 @@
+.card-information {
+  position: relative;
+  padding: 1.6rem 0 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.card-information__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 2.4rem;
+}
+.card-information__text {
+  display: block;
+  padding-right: 1.2rem;
+}
+.card-information__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+
+.card__badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  opacity: 1;
+  z-index: 3;
+}
+
+.card__badge {
+  transition: opacity var(--duration-default);
+}
+.card__badge .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide__arrow {
+    background: #ffffff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    top: 50%;
+  }
+  
+  .splide__arrow::before {
+    color: black;
+  }
+  
+  .splide__arrow.splide__arrow--next {
+    background: #ffffff;
+  }
+  
+  .splide__arrow.splide__arrow--next::before {
+    content: "";
+    color: black;
+  }
+  
+  .splide__arrow.splide__arrow--prev {
+    background: #ffffff;
+  }
+  
+  .splide__arrow.splide__arrow--prev::before {
+    content: "";
+    color: black;
+    font-size: 50px;
+  }
+.product-card__price.has-compare-price {
+  color: red;
+}

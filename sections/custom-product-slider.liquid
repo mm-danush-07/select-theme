@@ -1,0 +1,99 @@
+{% comment %} <link rel="stylesheet" href=" {{ 'splide.min.css' | asset_url  }} "> {% endcomment %}
+{% comment %} <script src="{{  "splide.min.js" | asset_url}}" defer></script> {% endcomment %}
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+{{ "custom-slider.css" |  asset_url |  stylesheet_tag }}
+
+<script src="{{  "custom-slider.js" | asset_url}}" defer></script>
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+
+<div class="product-list padding-{{ section.id }}">
+    <div class="page-width">
+        <h2>{{ section.settings.section_heading }}</h2>
+<splide-slider>
+        <div class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track ">
+        <ul class="splide__list product-list__card">
+        {% for product in section.settings.product_list %}
+        <li class="splide__slide ">
+          {% render 'product-card', product: product, section_id: section.id %}
+        </li>
+      {% else %}
+        {% for i in (1..5) %}
+          <div class="splide__slide ">
+            <div class="media media--square">
+              {{ 'product-' | append: i | placeholder_svg_tag }}
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+                </ul>
+            </div>
+        </div>
+        </splide-slider>
+        </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Custom Product list",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section heading",
+        "default": "Our Bestsellers"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Products",
+        "limit": 12
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }
+    ],
+    "presets": [{
+        "name": "Custom Product list"
+    }]
+  }
+{% endschema %}
