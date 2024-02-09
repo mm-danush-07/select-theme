@@ -17,7 +17,7 @@
         "announcement-bar-0"
       ],
       "custom_css": [
-        "h2 {font-size:14px}"
+        "h2 {font-size: 9px;}"
       ],
       "settings": {
         "color_scheme": "scheme-2",
