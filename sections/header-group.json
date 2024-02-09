@@ -8,22 +8,25 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "JOIN NOW FOR FRESH FINDS AND 10% OFF YOUR NEXT PURCHASE.",
+            "link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
+      "custom_css": [
+        "h2 {font-size:14px}"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "show_line_separator": true,
+        "color_scheme": "scheme-2",
+        "show_line_separator": false,
         "show_social": false,
         "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
+        "change_slides_speed": 3,
+        "enable_country_selector": true,
+        "enable_language_selector": true
       }
     },
     "header": {
