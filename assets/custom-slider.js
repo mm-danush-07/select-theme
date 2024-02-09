@@ -23,7 +23,7 @@ class SplideSlider extends HTMLElement {
           1200: { perPage: 2, gap: "1rem" },
           640: { perPage: 1, gap: 0 },
         },
-        perMove: 1,
+        perMove: 1
       });
       splide.mount();
     });
