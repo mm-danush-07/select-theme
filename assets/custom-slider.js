@@ -21,8 +21,9 @@ class SplideSlider extends HTMLElement {
         pagination: false,
         breakpoints: {
           1200: { perPage: 2, gap: "1rem" },
-          640: { perPage:1, gap: 0 },
+          640: { perPage: 1, gap: 0 },
         },
+        perMove: 1,
       });
       splide.mount();
     });

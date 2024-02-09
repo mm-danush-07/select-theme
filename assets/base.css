@@ -3687,6 +3687,7 @@ a {
 }
 
 :root{
+      --color-border: 214, 214, 214;
       --color-error: 219, 0, 0;
     --color-error-border: 219, 0, 0;
     --color-error-background: 172, 71, 71;

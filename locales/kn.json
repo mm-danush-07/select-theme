@@ -1,0 +1,271 @@
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " ಮತ್ತು ",
+      "last_word_connector": ", ಮತ್ತು "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "{{address}} ವಿಳಾಸವನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"
+      },
+      "general": {
+        "page_title": "ಚೆಕ್ಔಟ್",
+        "error_page_title": "ದೋಷ",
+        "skip_to_content": "ವಿಷಯಕ್ಕೆ ತೆರಳಿ",
+        "breadcrumb": "ಬ್ರೆಡ್ಕ್ರಂಬ್",
+        "continue_button_label": "ಮುಂದುವರಿಸಿ",
+        "complete_purchase_button_label": "ಸಂಪೂರ್ಣ ಆದೇಶ",
+        "pay_now_button_label": "ಈಗ ಪಾವತಿಸಿ",
+        "authenticate_purchase_button_label": "ಪಾವತಿಯನ್ನು ಪ್ರಮಾಣೀಕರಿಸಿ",
+        "edit_link_label": "ತಿದ್ದು",
+        "all_rights_reserved": "ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ %{shop_name}",
+        "print_policies_link_label": "ಮುದ್ರಿಸಿ",
+        "cart": "ಕಾರ್ಟ್",
+        "close_modal_label": "ಮುಚ್ಚಿ",
+        "close_notice_label": "ಮುಚ್ಚಿ",
+        "expand_notice_label": "ಇನ್ನಷ್ಟು ವೀಕ್ಷಿಸಿ",
+        "continue_to_shipping_method": "ಶಿಪ್ಪಿಂಗ್‌ಗೆ ಮುಂದುವರಿಯಿರಿ",
+        "continue_to_payment_method": "ಪಾವತಿಯನ್ನು ಮುಂದುವರಿಸಿ",
+        "continue_to_review": "ಆದೇಶವನ್ನು ಪರಿಶೀಲಿಸಿ",
+        "back_to_cart": "ಕಾರ್ಟ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+        "back_to_contact_information": "ಮಾಹಿತಿಗೆ ಹಿಂತಿರುಗಿ",
+        "back_to_shipping_method": "ಶಿಪ್ಪಿಂಗ್ ಗೆ ಹಿಂತಿರುಗಿ",
+        "back_to_payment_method": "ಪಾವತಿಗೆ ಹಿಂತಿರುಗಿ",
+        "choose_shipping_method": "ಶಿಪ್ಪಿಂಗ್ ವಿಧಾನವನ್ನು ಆರಿಸಿ",
+        "choose_payment_method": "ಪಾವತಿ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "choose_billing_address": "ಬಿಲ್ಲಿಂಗ್ ವಿಳಾಸವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "contact_us_html": "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+        "autocomplete_title": "ಸಲಹೆಗಳು",
+        "autocomplete_single_item": "1 ಐಟಂ ಲಭ್ಯವಿದೆ",
+        "autocomplete_multi_item": "{{number}} ಐಟಂಗಳು ಲಭ್ಯವಿದೆ",
+        "autocomplete_close": "ಸಲಹೆಗಳನ್ನು ಮುಚ್ಚಿ",
+        "forwarding_indicator": {
+          "new_window": "ಹೊಸ ವಿಂಡೋದಲ್ಲಿ ತೆರೆಯುತ್ತದೆ.",
+          "external": "ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್ ತೆರೆಯುತ್ತದೆ.",
+          "external_and_new_window": "ಹೊಸ ವಿಂಡೋದಲ್ಲಿ ಬಾಹ್ಯ ವೆಬ್‌ಸೈಟ್ ತೆರೆಯುತ್ತದೆ."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - ಚೆಕ್‌ಔಟ್"
+        },
+        "tooltip_accessibility_label": "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
+        "errors": {
+          "only_empty_terms_accepted": "ಈ ನೀತಿಯು ಖಾಲಿ ನಿಯಮಗಳನ್ನು ಮಾತ್ರ ಸ್ವೀಕರಿಸುತ್ತದೆ.",
+          "session_identifier_not_unique_error": "ನಿಮ್ಮ ಆರ್ಡರ್‌ನಲ್ಲಿ ಏನೋ ತಪ್ಪಾಗಿದೆ, ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪರಿಶೀಲಿಸಲು ಪ್ರಯತ್ನಿಸಿ.",
+          "line_item_limit_reached": "ಸಾಲಿನ ಐಟಂಗಳ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯನ್ನು ತಲುಪಲಾಗಿದೆ.",
+          "session_is_already_finished": "ಈ ಚೆಕ್‌ಔಟ್ ಸೆಶನ್ ಅನ್ನು ಈಗಾಗಲೇ ಅಂತಿಮಗೊಳಿಸಲಾಗಿದೆ.",
+          "merchandise": {
+            "only_value_constraint": "ಮರ್ಚಂಡೈಸ್ ಇನ್‌ಪುಟ್‌ನಲ್ಲಿ ನಿಖರವಾದ ಮೌಲ್ಯಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸಲಾಗಿದೆ.",
+            "merchandise_not_found": "ಉತ್ಪನ್ನ ಕಂಡುಬಂದಿಲ್ಲ.",
+            "merchandise_variant_not_found": "ಉತ್ಪನ್ನದ ರೂಪಾಂತರ ಕಂಡುಬಂದಿಲ್ಲ.",
+            "merchandise_not_applicable": "ಉತ್ಪನ್ನದ ರೂಪಾಂತರವನ್ನು ಖರೀದಿಸಲಾಗುವುದಿಲ್ಲ.",
+            "digital_products_not_supported_for_b2b": "B2B ಸಂದರ್ಭದಲ್ಲಿ ಡಿಜಿಟಲ್ ಉತ್ಪನ್ನಗಳು ಲಭ್ಯವಿಲ್ಲ.",
+            "bundle_products_not_supported_for_b2b": "ಈ ಸ್ಥಳಕ್ಕಾಗಿ ಬಂಡಲ್ ಮಾಡಿದ ಐಟಂಗಳನ್ನು B2B ಆರ್ಡರ್‌ಗಳಿಗೆ ಸೇರಿಸಲಾಗುವುದಿಲ್ಲ.",
+            "gift_card_quantity_mismatch": "ಉಡುಗೊರೆ ಕಾರ್ಡ್ ಕೋಡ್‌ಗಳನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸುವಾಗ, ಸಾಲಿನ ಐಟಂ ಪ್ರಮಾಣ ಮತ್ತು ಉಡುಗೊರೆ ಕಾರ್ಡ್ ಕೋಡ್‌ಗಳ ಸಂಖ್ಯೆಯು ಹೊಂದಿಕೆಯಾಗಬೇಕು.",
+            "gift_card_not_supported": "ಈ ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ ಉಡುಗೊರೆ ಕಾರ್ಡ್‌ಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.",
+            "gift_card_not_unique": "ಈ ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ {{code}} ಕೋಡ್‌ನೊಂದಿಗೆ ಉಡುಗೊರೆ ಕಾರ್ಡ್ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಬಾರಿ ಕಂಡುಬರುತ್ತದೆ. ಹೋಲಿಕೆ ಮಾಡುವ ಮೊದಲು ಕೋಡ್‌ಗಳನ್ನು ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಲಾಗುತ್ತದೆ.",
+            "gift_card_used": "ಉಡುಗೊರೆ ಕಾರ್ಡ್ ಕೋಡ್ {{code}} ಅನ್ನು ಈಗಾಗಲೇ ಉಡುಗೊರೆ ಕಾರ್ಡ್‌ಗೆ ನಿಯೋಜಿಸಲಾಗಿದೆ. ಹೋಲಿಕೆ ಮಾಡುವ ಮೊದಲು ಕೋಡ್‌ಗಳನ್ನು ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಲಾಗುತ್ತದೆ.",
+            "gift_card_invalid": "ಉಡುಗೊರೆ ಕಾರ್ಡ್ ಕೋಡ್ {{code}} ಅಮಾನ್ಯವಾಗಿದೆ.",
+            "gift_card_code_changed": "ಫಾರ್ಮ್ಯಾಟಿಂಗ್ ನಿಯಮಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ಉಡುಗೊರೆ ಕಾರ್ಡ್ ಕೋಡ್ {{proposed_code}} ಅನ್ನು {{formatted_code}} ಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.",
+            "gift_card_with_attributes_not_supported": "ಕಸ್ಟಮ್ ಗುಣಲಕ್ಷಣಗಳೊಂದಿಗೆ ಉಡುಗೊರೆ ಕಾರ್ಡ್‌ಗಳು ಈ ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.",
+            "gift_card_with_components_not_supported": "ಈ ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ ಕಾಂಪೊನೆಂಟ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಉಡುಗೊರೆ ಕಾರ್ಡ್‌ಗಳನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.",
+            "selling_plan_mismatch": "ಚಂದಾದಾರಿಕೆಯನ್ನು ನವೀಕರಿಸಲಾಗಿದೆ.",
+            "selling_plan_not_supported": "ಚಂದಾದಾರಿಕೆಗಳು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.",
+            "selling_plan_not_supported_b2b": "B2B ಚೆಕ್‌ಔಟ್‌ಗೆ ಚಂದಾದಾರಿಕೆಗಳು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.",
+            "price_mismatch": "ಈ ಮರ್ಚಂಡೈಸ್‌ಗೆ ಈ ಹಿಂದೆ ಪ್ರಸ್ತಾಪಿಸಲಾದ ಬೆಲೆಯು ಅಮಾನ್ಯವಾಗಿದೆ ಮತ್ತು ಅದನ್ನು ನವೀಕರಿಸಲಾಗಿದೆ.",
+            "inventory_not_found": "ಈ ವ್ಯಾಪಾರಕ್ಕಾಗಿ ಯಾವುದೇ ದಾಸ್ತಾನು ಕಂಡುಬಂದಿಲ್ಲ.",
+            "product_not_published": "ಉತ್ಪನ್ನವನ್ನು ಪ್ರಕಟಿಸಲಾಗಿಲ್ಲ.",
+            "duplicated_stable_id": "ಈ ಮರ್ಚಂಡೈಸ್ ಲೈನ್ ಮತ್ತೊಂದು ಸಾಲಿನಂತೆಯೇ ಸ್ಥಿರ-ID ಅನ್ನು ಹೊಂದಿದೆ.",
+            "minimum_quantity_not_met": "ಈ ಸರಕುಗಳ ಪ್ರಮಾಣವು ಅಗತ್ಯವಿರುವ ಕನಿಷ್ಠ {{min}} ಪ್ರಮಾಣವನ್ನು ಪೂರೈಸುವುದಿಲ್ಲ.",
+            "maximum_quantity_exceeded": "ಈ ಸರಕುಗಳ ಪ್ರಮಾಣವು ಅನುಮತಿಸಲಾದ ಗರಿಷ್ಠ {{max}} ಪ್ರಮಾಣವನ್ನು ಪೂರೈಸುವುದಿಲ್ಲ.",
+            "quantity_increment_not_met": "ಈ ಸರಕುಗಳ ಮೇಲೆ {{increment}} ಪ್ರಮಾಣ ಹೆಚ್ಚಳವನ್ನು ಅನ್ವಯಿಸಬೇಕು.",
+            "quantity_rules_not_met": "ಸರಕುಗಳ ಅಮಾನ್ಯ ಪ್ರಮಾಣ.",
+            "bundle_requires_components": "ಈ ಬಂಡಲ್ ಮರ್ಚಂಡೈಸ್ ಯಾವುದೇ ಘಟಕಗಳನ್ನು ಹೊಂದಿಲ್ಲ.",
+            "title_too_long": "ವ್ಯಾಪಾರದ ಶೀರ್ಷಿಕೆ ತುಂಬಾ ಉದ್ದವಾಗಿದೆ."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "ಕಂಪನಿಯ ಸಂಪರ್ಕವು ಕಂಪನಿಗೆ ಪ್ರವೇಶವನ್ನು ಹೊಂದಿಲ್ಲ.",
+            "customer_account_required": "ಮುಂದುವರಿಯಲು ಗ್ರಾಹಕರು ಲಾಗ್ ಇನ್ ಮಾಡಬೇಕು.",
+            "contact_info_does_not_match_customer_account": "ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಗ್ರಾಹಕರ ಮಾಹಿತಿಯು ಲಾಗ್ ಇನ್ ಮಾಡಿದ ಗ್ರಾಹಕ ಖಾತೆಗೆ ಹೊಂದಿಕೆಯಾಗಬೇಕು.",
+            "phone_number_does_not_match_expected_pattern": "ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಫೋನ್ ಸಂಖ್ಯೆಯು ನಿರೀಕ್ಷಿತ ಮಾದರಿಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತಿಲ್ಲ.",
+            "email_required": "ಚಂದಾದಾರಿಕೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಸರಕುಗಳನ್ನು ಖರೀದಿಸಿದಾಗ ಇಮೇಲ್ ಅಗತ್ಯವಿದೆ.",
+            "email_domain_is_invalid": "ಈ ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಡೊಮೇನ್ ಅನ್ನು ಪರಿಹರಿಸಲಾಗುವುದಿಲ್ಲ.",
+            "missing_contact_method": "ಮಾನ್ಯವಾದ ಸಂಪರ್ಕ ವಿಧಾನವನ್ನು ಕಾಣೆಯಾಗಿದೆ.",
+            "checkout_completion_target_is_missing": "ಚೆಕ್ಔಟ್ ಪೂರ್ಣಗೊಳಿಸುವಿಕೆಯ ಗುರಿಯು ಕಾಣೆಯಾಗಿದೆ.",
+            "invalid_customer_profile": "ಅಮಾನ್ಯ ಗ್ರಾಹಕ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಒದಗಿಸಲಾಗಿದೆ.",
+            "customer_profile_access_restricted": "ಚೆಕ್ಔಟ್ ಗ್ರಾಹಕರ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಯನ್ನು ಹೊಂದಿಲ್ಲ.",
+            "checkout_completion_target_is_invalid_proc": "ಅಮಾನ್ಯ ಚೆಕ್‌ಔಟ್ ಪೂರ್ಣಗೊಳಿಸುವಿಕೆಯ ಗುರಿ."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "ಕಾರ್ಟ್ ಕೇವಲ ಒಂದು ವಿತರಣಾ ಮಾರ್ಗವನ್ನು ಹೊಂದಿರಬೇಕು.",
+            "wrong_number_of_delivery_lines": "ಸರಕುಗಳ ಪ್ರತಿ ಗುಂಪಿಗೆ ವಿತರಣಾ ಮಾರ್ಗವನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಬೇಕು.",
+            "external_delivery_promise_error": "ಬಾಹ್ಯ ವಿತರಣೆಯ ಭರವಸೆ ಪಡೆಯುವ ದೋಷ.",
+            "options_instructions_invalid": "ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಸೂಚನೆಗಳು ನಿರೀಕ್ಷಿತ ಮಾದರಿಗೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ.",
+            "destination_address_required": "ಮುಂದುವರಿಯಲು ಗಮ್ಯಸ್ಥಾನದ ವಿಳಾಸದ ಅಗತ್ಯವಿದೆ.",
+            "pickup_points_unavailable": "ಪಿಕಪ್ ಪಾಯಿಂಟ್‌ಗಳು ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ.",
+            "local_pickup_delivery_line_detail_changed": "ಮುಂದುವರಿಯಲು ಪ್ರಸ್ತುತ ಸ್ಥಳೀಯ ಪಿಕಪ್ ವಿತರಣಾ ತಂತ್ರವನ್ನು ಬದಲಾಯಿಸಬೇಕು.",
+            "local_pickup_no_delivery_strategy_available": "ಲಭ್ಯವಿರುವ ಯಾವುದೇ ಸ್ಥಳೀಯ ಪಿಕಪ್ ವಿತರಣಾ ತಂತ್ರ ಕಂಡುಬಂದಿಲ್ಲ.",
+            "origin_location_id_required": "RETAIL ವಿತರಣಾ ವಿಧಾನವನ್ನು ವಿನಂತಿಸಿದಾಗ ಮೂಲ ಸ್ಥಳ ID ಅಗತ್ಯವಿದೆ.",
+            "invalid_origin_location_id": "ಮೂಲ ಸ್ಥಳ ID ಗೆ ಹೊಂದಾಣಿಕೆಯಾಗುವ ಸ್ಥಳವನ್ನು ಕಂಡುಹಿಡಿಯಲಾಗಲಿಲ್ಲ.",
+            "origin_location_id_not_allowed": "ವಿನಂತಿಸಿದ ವಿತರಣಾ ವಿಧಾನಗಳು ಮೂಲ ಸ್ಥಳ ID ಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.",
+            "auto_fulfill_not_allowed": "ಪೂರೈಸುವಿಕೆಯ ನಡವಳಿಕೆಯನ್ನು ಅತಿಕ್ರಮಿಸಲು ಈ ಅಧಿವೇಶನಕ್ಕೆ ಅಧಿಕಾರವಿಲ್ಲ.",
+            "auto_fulfill_required": "RETAIL ವಿತರಣಾ ವಿಧಾನವನ್ನು ವಿನಂತಿಸಿದಾಗ ಸ್ವಯಂ ಪೂರೈಸುವ ಅಗತ್ಯವಿದೆ.",
+            "prefetch_shipping_rates_used": "ಪೂರ್ವಪಡೆಯಲಾದ ಶಿಪ್ಪಿಂಗ್ ದರಗಳು ಎಂದಿಗೂ ದರಗಳನ್ನು ಹಿಂತಿರುಗಿಸಬಾರದು.",
+            "fulfillment_constraints_not_satisfied": "ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪೂರೈಸುವಿಕೆಯ ನಿರ್ಬಂಧಗಳನ್ನು ತೃಪ್ತಿಪಡಿಸಲಾಗಿಲ್ಲ.",
+            "must_fulfill_from_constraint_not_satisfied": "ಅಗತ್ಯ ಸ್ಥಳಗಳಿಂದ ಐಟಂಗಳನ್ನು ಪೂರೈಸಲು ಸಾಧ್ಯವಾಗದ ಕಾರಣ ಪೂರೈಸುವಿಕೆಯ ನಿರ್ಬಂಧಗಳನ್ನು ಪೂರೈಸಲಾಗಿಲ್ಲ.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "ಒಂದೇ ಸ್ಥಳದಿಂದ ಐಟಂಗಳನ್ನು ಪೂರೈಸಲು ಸಾಧ್ಯವಾಗದ ಕಾರಣ ಪೂರೈಸುವಿಕೆಯ ನಿರ್ಬಂಧಗಳನ್ನು ಪೂರೈಸಲಾಗಿಲ್ಲ.",
+            "delivery_strategy_conditions_not_satisfied": "ಈ ಸ್ಥಳಕ್ಕೆ ವಿತರಣಾ ತಂತ್ರಗಳು ಲಭ್ಯವಿವೆ, ಆದರೆ ಅವರ ಷರತ್ತುಗಳು ತೃಪ್ತಿ ಹೊಂದಿಲ್ಲ.",
+            "out_of_stock_at_origin_location": "ಮೂಲ ಸ್ಥಳದಲ್ಲಿ ಸ್ಟಾಕ್ ಇಲ್ಲ."
+          }
+        }
+      },
+      "contact": {
+        "different_shipping_address_label": "ಬೇರೆ ವಿಳಾಸಕ್ಕೆ ಶಿಪ್ ಮಾಡಿ",
+        "different_shipping_address_text": "ಈ ಆದೇಶಕ್ಕಾಗಿ ಒಂದು-ಬಾರಿಯ ವಿಳಾಸವನ್ನು ಬಳಸಿ",
+        "change_company_location_link_label": "ಕಂಪನಿಯ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ",
+        "change_location_link_label": "ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಿ",
+        "ship_to_company": "{{companyName}} ಗೆ ಶಿಪ್ ಮಾಡಿ"
+      },
+      "delivery_options": {
+        "free_total_label": "ಉಚಿತ",
+        "ship": "ಹಡಗು",
+        "shipping_address": "ಶಿಪ್ಪಿಂಗ್ ವಿಳಾಸ",
+        "pick_up": "ಎತ್ತಿಕೊಳ್ಳಿ",
+        "pick_up_locations": "ಪಿಕಪ್ ಸ್ಥಳಗಳು",
+        "pick_up_in_one_hour": "ಸಾಮಾನ್ಯವಾಗಿ 1 ಗಂಟೆಯಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_two_hours": "ಸಾಮಾನ್ಯವಾಗಿ 2 ಗಂಟೆಗಳಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_four_hours": "ಸಾಮಾನ್ಯವಾಗಿ 4 ಗಂಟೆಗಳಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_twenty_four_hours": "ಸಾಮಾನ್ಯವಾಗಿ 24 ಗಂಟೆಗಳಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_two_to_four_days": "ಸಾಮಾನ್ಯವಾಗಿ 2-4 ದಿನಗಳಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_five_or_more_days": "ಸಾಮಾನ್ಯವಾಗಿ 5+ ದಿನಗಳಲ್ಲಿ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_zero_to_two_hours": "2 ಗಂಟೆಗಳಲ್ಲಿ ಪಿಕಪ್‌ಗೆ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_in_two_to_four_hours": "4 ಗಂಟೆಗಳಲ್ಲಿ ಪಿಕಪ್‌ಗೆ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_immediately": "ಈಗ ಪಿಕಪ್‌ಗೆ ಸಿದ್ಧವಾಗಿದೆ",
+        "pick_up_next_day": "ಮರುದಿನ ಪಿಕಪ್‌ಗೆ ಸಿದ್ಧವಾಗಿದೆ",
+        "pickup_point_method_definition": "ಪಿಕಪ್ ಪಾಯಿಂಟ್‌ಗೆ ರವಾನಿಸಿ",
+        "retail_method_definition": "ಚಿಲ್ಲರೆ ಸಾಗಾಟ",
+        "none_method_definition": "ಶಿಪ್ಪಿಂಗ್ ಇಲ್ಲ",
+        "subscription_pickup_information": "ಈ ವಿತರಣಾ ವಿಧಾನವು ಈ ಆರ್ಡರ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಐಟಂಗಳಿಗೆ ಮತ್ತು ಈ ಚಂದಾದಾರಿಕೆಗಾಗಿ ಭವಿಷ್ಯದ ಎಲ್ಲಾ ಆರ್ಡರ್‌ಗಳಿಗೆ ಅನ್ವಯಿಸುತ್ತದೆ."
+      },
+      "customer_account": {
+        "not_user_label": "%{first_name} ಅಲ್ಲವೇ?",
+        "have_an_account_label": "ಖಾತೆ ಹೊಂದಿರುವಿರಾ?",
+        "sign_in_link_label": "ಲಾಗ್ ಇನ್ ಮಾಡಿ",
+        "sign_out_link_label": "ಲಾಗ್ ಔಟ್",
+        "save_my_information_label": "ಮುಂದಿನ ಬಾರಿಗೆ ಈ ಮಾಹಿತಿಯನ್ನು ಉಳಿಸಿ",
+        "invalid_address": "ಆಯ್ಕೆಮಾಡಿದ ವಿಳಾಸ ಅಮಾನ್ಯವಾಗಿದೆ. %{update_address_link} ಅಥವಾ ಬೇರೆ ವಿಳಾಸವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+        "incomplete_address": "ಆಯ್ಕೆಮಾಡಿದ ವಿಳಾಸ ಅಪೂರ್ಣವಾಗಿದೆ. %{update_address_link} ಅಥವಾ ಬೇರೆ ವಿಳಾಸವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+        "rollup_label": "ಖಾತೆ",
+        "invalid_shipping_method_summary": "ಲಭ್ಯವಿರುವ ಶಿಪ್ಪಿಂಗ್ ವಿಧಾನಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಮಾನ್ಯವಾದ ಶಿಪ್ಪಿಂಗ್ ವಿಳಾಸವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+      },
+      "stock": {
+        "page_title": "ದಾಸ್ತಾನು ಸಮಸ್ಯೆಗಳು",
+        "title": "ಸ್ಟಾಕ್ ಮುಗಿದಿದೆ",
+        "items_unavailable_notice": "ಕೆಲವು ಐಟಂಗಳು ಇನ್ನು ಮುಂದೆ ಲಭ್ಯವಿಲ್ಲ.",
+        "product_column_header": "ಉತ್ಪನ್ನಗಳು",
+        "quantity_column_header": "ಪ್ರಮಾಣ",
+        "price_column_header": "ಬೆಲೆ",
+        "status_column_header": "ಸ್ಥಿತಿ",
+        "removed_from_cart_notice": "ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ",
+        "sold_out_label": "ಮಾರಾಟವಾಗಿದೆ",
+        "reduced_label": "ಕಡಿಮೆಯಾಗಿದೆ",
+        "reduced_with_quantity_label": "%{quantity_available} ಮಾತ್ರ ಉಳಿದಿದೆ",
+        "remove_from_cart_button_label": "ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಿ",
+        "continue_shopping_button_label": "ಮುಂದುವರಿಸಿ",
+        "go_back_to_cart_button_label": "ನನ್ನ ಕಾರ್ಟ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+        "remove": "ತೆಗೆದುಹಾಕಿ",
+        "return_to_store_label": "ಅಂಗಡಿಗೆ ಹಿಂತಿರುಗಿ",
+        "continue_cta_label": "ಚೆಕ್ಔಟ್ ಮುಂದುವರಿಸಿ",
+        "item_label": {
+          "one": "{{count}} ಐಟಂ",
+          "other": "{{count}} ಐಟಂಗಳು"
+        },
+        "empty_cart_label": "ನಿಮ್ಮ ಕಾರ್ಟ್ ಖಾಲಿಯಾಗಿದೆ",
+        "quantity_update": {
+          "page_title": "ಪ್ರಮಾಣ ನವೀಕರಣ",
+          "title": "ಪ್ರಮಾಣ ನವೀಕರಣ",
+          "description": "ಈ ಐಟಂಗಳಿಗೆ ಲಭ್ಯವಿರುವ ಪ್ರಮಾಣಗಳು ಬದಲಾಗಿವೆ ಮತ್ತು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಲ್ಲಿ ನವೀಕರಿಸಲಾಗಿದೆ."
+        },
+        "unpurchasable_product": {
+          "title": "ಖರೀದಿಸಲಾಗದ ಉತ್ಪನ್ನ",
+          "header": "ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ಕೆಲವು ಐಟಂಗಳನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ",
+          "message": "ಈ ಐಟಂಗಳು B2B ಆರ್ಡರ್‌ಗಳಿಗೆ ಲಭ್ಯವಿಲ್ಲ.",
+          "status_column_header": "ಲಭ್ಯವಿಲ್ಲ"
+        },
+        "unpurchasable_product_generic": {
+          "title": "ಖರೀದಿಸಲಾಗದ ಉತ್ಪನ್ನ",
+          "header": "ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ಕೆಲವು ಐಟಂಗಳನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ",
+          "message": "ಈ ವಸ್ತುಗಳು ಲಭ್ಯವಿಲ್ಲ.",
+          "status_column_header": "ಲಭ್ಯವಿಲ್ಲ"
+        },
+        "unshippable_product": {
+          "title": "ಯಾವುದೇ ವಿತರಣೆ ಲಭ್ಯವಿಲ್ಲ",
+          "header": {
+            "one": "%{count} ಐಟಂಗೆ ಯಾವುದೇ ವಿತರಣೆ ಲಭ್ಯವಿಲ್ಲ",
+            "other": "%{count} ಐಟಂಗಳಿಗೆ ಯಾವುದೇ ವಿತರಣೆ ಲಭ್ಯವಿಲ್ಲ"
+          },
+          "message": {
+            "one": "ನಿಮ್ಮ ವಿಳಾಸಕ್ಕೆ ಯಾವುದೇ ವಿತರಣಾ ವಿಧಾನಗಳು ಲಭ್ಯವಿಲ್ಲದ ಕಾರಣ ಈ ಐಟಂ ಅನ್ನು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.",
+            "other": "ನಿಮ್ಮ ವಿಳಾಸಕ್ಕೆ ಯಾವುದೇ ವಿತರಣಾ ವಿಧಾನಗಳು ಲಭ್ಯವಿಲ್ಲದ ಕಾರಣ ಈ ಐಟಂಗಳನ್ನು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ."
+          },
+          "status_column_header": "ವಿತರಣೆ ಇಲ್ಲ"
+        },
+        "price_update": {
+          "title": "ಬೆಲೆ ನವೀಕರಣ",
+          "description": "ಈ ಐಟಂಗಳ ಬೆಲೆಗಳು ಬದಲಾಗಿವೆ ಮತ್ತು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಲ್ಲಿ ನವೀಕರಿಸಲಾಗಿದೆ."
+        },
+        "out_of_stock": {
+          "description": "ಈ ಐಟಂಗಳು ಇನ್ನು ಮುಂದೆ ಲಭ್ಯವಿರುವುದಿಲ್ಲ ಮತ್ತು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.",
+          "items_unavailable": "ಕೆಲವು ಐಟಂಗಳು ಇನ್ನು ಮುಂದೆ ಲಭ್ಯವಿರುವುದಿಲ್ಲ ಮತ್ತು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ."
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "ಲಭ್ಯವಿಲ್ಲದ ಉತ್ಪನ್ನ",
+          "other": "ಲಭ್ಯವಿಲ್ಲದ ಉತ್ಪನ್ನಗಳು"
+        },
+        "products_not_available": {
+          "one": "ಈ ಉತ್ಪನ್ನವನ್ನು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ ಏಕೆಂದರೆ ಇದು ನಿಮ್ಮ ದೇಶ\/ಪ್ರದೇಶದಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ.",
+          "other": "ಈ ಉತ್ಪನ್ನಗಳನ್ನು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ ಏಕೆಂದರೆ ಅವುಗಳು ನಿಮ್ಮ ದೇಶ\/ಪ್ರದೇಶದಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "ಈ ಉತ್ಪನ್ನವು ನಿಮ್ಮ ದೇಶ\/ಪ್ರದೇಶದಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ.",
+          "other": "ಈ ಉತ್ಪನ್ನಗಳು ನಿಮ್ಮ ದೇಶ\/ಪ್ರದೇಶದಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ."
+        },
+        "unavailable_label": "ಲಭ್ಯವಿಲ್ಲ"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{count} ಐಟಂಗೆ ಯಾವುದೇ ವಿತರಣೆ ಲಭ್ಯವಿಲ್ಲ",
+            "other": "%{count} ಐಟಂಗಳಿಗೆ ಯಾವುದೇ ವಿತರಣೆ ಲಭ್ಯವಿಲ್ಲ"
+          },
+          "message": {
+            "one": "ನಿಮ್ಮ ವಿಳಾಸಕ್ಕೆ ಯಾವುದೇ ವಿತರಣಾ ವಿಧಾನಗಳು ಲಭ್ಯವಿಲ್ಲದ ಕಾರಣ ಈ ಐಟಂ ಅನ್ನು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.",
+            "other": "ನಿಮ್ಮ ವಿಳಾಸಕ್ಕೆ ಯಾವುದೇ ವಿತರಣಾ ವಿಧಾನಗಳು ಲಭ್ಯವಿಲ್ಲದ ಕಾರಣ ಈ ಐಟಂಗಳನ್ನು ನಿಮ್ಮ ಕಾರ್ಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ."
+          },
+          "label": "ವಿತರಣೆ ಇಲ್ಲ"
+        }
+      },
+      "order_summary": {
+        "title": "ಆದೇಶದ ಸಾರಾಂಶ",
+        "group_title_label": "\"%{group_title}\" ನ ಭಾಗ",
+        "order_name_label": "ಆರ್ಡರ್ %{name}",
+        "shopping_cart_label": "ಶಾಪಿಂಗ್ ಕಾರ್ಟ್",
+        "discount_title": "ರಿಯಾಯಿತಿ",
+        "discount_title_stacking": {
+          "one": "ರಿಯಾಯಿತಿ",
+          "other": "ರಿಯಾಯಿತಿಗಳು"
+        },
+        "discount_order_stacking": {
+          "one": "ಆರ್ಡರ್ ರಿಯಾಯಿತಿ",
+          "other": "ರಿಯಾಯಿತಿಗಳನ್ನು ಆದೇಶಿಸಿ"
+        },
+        "discount_label": "ರಿಯಾಯಿತಿ ಸಂಕೇತ",
+        "discount_not_found": "ನಮೂದಿಸಿದ ಕೋಡ್‌ಗೆ ಹೊಂದಿಕೆಯಾಗುವ ಮಾನ್ಯವಾದ ರಿಯಾಯಿತಿಯನ್ನು ಕಂಡುಹಿಡಿಯಲಾಗಲಿಲ್ಲ",
+        "discount_placeholder": "ರಿಯಾಯಿತಿ ಸಂಕೇತ",
+        "enter_shipping_address": "ಶಿಪ್ಪಿಂಗ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ",
+        "gift_card_title": "ಉಡುಗೊರೆ ಪತ್ರ"
+      }
+    }
+  }
+}
