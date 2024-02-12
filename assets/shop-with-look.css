@@ -1,0 +1,19 @@
+.shop-look__image{
+    position: relative;
+}
+
+
+.shop-look__dot {
+    height: 3.4rem;
+    width: 3.4rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.shop-with-look__slider-content{
+    padding: 90px;
+}

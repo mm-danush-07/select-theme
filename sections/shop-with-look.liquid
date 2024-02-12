@@ -1,0 +1,207 @@
+
+{{ 'shop-with-look.css' |  asset_url |  stylesheet_tag }}
+
+<script src="{{  "shop-with-link.js" | asset_url }}" defer></script>
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+.image-with-text__box{
+    background : {{ section.settings.background_color}}
+}
+.background-{{ section.id }}{
+  background-color: {{ section.settings.section_background }}
+}
+{% for block in section.blocks %}
+.shop-look-dot__position-{{ block.id }}{
+  top:{{ block.settings.top_position }}%;
+  left: {{ block.settings.left_position }}%;
+}
+{% endfor %}
+  
+{% endstyle %}
+
+
+<div class="shop-with-look padding-{{ section.id }}">
+    <div class="page-width">
+      <div><h2 class="h2">
+{{ section.settings.title_text }}
+      </h2>  </div>
+        <div class="grid grid--1-col grid--2-col-tablet grid--2-col-desktop background-{{ section.id }}">
+          <div class="grid__item">
+
+          <div class="shop-look__image">
+            {% if section.settings.image  != blank %}
+        <div >
+          {%  render 'responsive-picture'  desktopImage:section.settings.image, mobileImage:section.settings.mobile_image, class: "media media--square" %}   
+        </div>
+              
+              {% else %}
+              <div class="media media--square">
+              {{ 'image' |  placeholder_svg_tag }}
+              </div>
+            {% endif %}
+           {% for block in section.blocks %}
+                <div class="shop-look__dot  shop-look-dot__position-{{ block.id }}" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
+                        <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
+                    </svg>
+                </div>
+              {% endfor %}
+
+          </div>
+
+          </div>
+
+          <div class="grid__item">
+<shop-up-slider>
+  <script>
+    {
+      "type": "slide",
+      "perPage": 1,
+      "pagination": false,
+      "perMove": 1
+    }
+  </script>
+  
+  <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        
+        {% for block in section.blocks %}
+          {% assign product = all_products[block.settings.product] %}
+          <li class="splide__slide">
+            <div class="shop-with-look__slider-content">
+
+              {% render 'responsive-picture' desktopImage:product.featured_image, class: "media media--square" %}
+                {{ product.title }}
+                {{ product.vendor }}
+                {{ product.price |  money_without_trailing_zeros}}
+            </div>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</shop-up-slider>
+
+              
+          </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% schema %}
+{
+    "name": "Shop With Look",
+    "settings": [
+         {
+            "type": "color",
+            "default": "#f5f5f7",
+            "label": "Section Background Color",
+            "id": "section_background"
+        },
+         {
+            "type": "text",
+            "default": "Look of the Day",
+            "label": "Title of the Section",
+            "id": "title_text"
+        },
+        {
+            "type": "image_picker",
+            "label": "Desktop Image",
+            "id": "image",
+            "info": "Desktop image size (650*650)"
+        },
+        {
+             "type": "image_picker",
+            "label": "Mobile Image",
+            "id": "mobile_image",
+            "info": "Mobile image size (450*450)"
+        },
+         {
+        "type": "select",
+        "id": "image_position",
+        "label": "Image Position",
+        "options": [
+          { "value": "left", "label": "Left" },
+          { "value": "right", "label": "Right" }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }    
+        ],
+  "blocks": [
+    {
+      "type": "product-content",
+      "name": "Product Content",
+      "settings": [
+   {
+    "type": "product",
+    "id":"product",
+    "label": "Choose Product"
+   },
+   {
+    "type": "range",
+    "id": "left_position",
+    "label": "Distance from the left",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "default": 20,
+    "info": "The distance is measured in percentage"
+   },
+   {
+    "type": "range",
+    "id": "top_position",
+    "label": "Distance from the top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "default": 20,
+    "info": "The distance is measured in percentage"
+   }
+      ]
+    }
+  ],
+    "presets": [
+        {
+            "name": "Shop With Look"
+        }
+    ]
+}
+{% endschema %}

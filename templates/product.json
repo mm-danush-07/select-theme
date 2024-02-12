@@ -49,13 +49,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "text_UMkpRt": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.new_heading_source.value }}",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
@@ -66,8 +59,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "text_UMkpRt"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -87,7 +79,6 @@
     },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -103,58 +94,10 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "image_with_text_MNqYwM": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_tfRqnL": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.new_heading_source.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_kc6ywz": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.description_ | metafield_tag }}<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_YTFwmf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_tfRqnL",
-        "text_kc6ywz",
-        "button_YTFwmf"
-      ],
-      "settings": {
-        "image": "{{ product.metafields.custom.image_source.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "image_with_text_MNqYwM"
+    "related-products"
   ]
 }

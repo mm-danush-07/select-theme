@@ -1,11 +1,11 @@
-{% comment %} <link rel="stylesheet" href=" {{ 'splide.min.css' | asset_url  }} "> {% endcomment %}
-{% comment %} <script src="{{  "splide.min.js" | asset_url}}" defer></script> {% endcomment %}
-
+{% comment %} <link rel="stylesheet" href=" {{ 'splide.min.css' | asset_url  }} "> 
+<script src="{{  "splide.min.js" | asset_url}}" defer></script> {% endcomment %}
+{% comment %} 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> {% endcomment %}
 {{ "custom-slider.css" |  asset_url |  stylesheet_tag }}
 
-<script src="{{  "custom-slider.js" | asset_url}}" defer></script>
+<script src="{{  "custom-slider.js" | asset_url }}" defer></script>
 {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -20,11 +20,31 @@
   }
 {% endstyle %}
 
+  
 
 <div class="product-list padding-{{ section.id }}">
     <div class="page-width">
         <h2>{{ section.settings.section_heading }}</h2>
 <splide-slider>
+  <script>
+      {
+        "type": "slide",
+        "perPage": 4,
+        "gap": "24px",
+        "pagination": false,
+         "perMove": 1,
+        "breakpoints": {
+          "1200": {
+             "perPage": 2, 
+             "gap": "1rem" 
+            },
+          "640": {
+             "perPage": 1,
+              "gap": 0
+             }
+      }
+}
+  </script>
         <div class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track ">
         <ul class="splide__list product-list__card">

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
+    
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon != blank -%}
@@ -35,6 +36,8 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+  {{ 'splide.min.css' | asset_url |  stylesheet_tag }}
+<script src="{{  "splide.min.js" | asset_url }}" defer></script>
     {{ content_for_header }}
 
     {%- liquid
@@ -349,5 +352,8 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+ <link rel="stylesheet" href=" {{ 'splide.min.css' | asset_url  }} "> 
+<script src="{{  "splide.min.js" | asset_url}}" defer></script>
   </body>
 </html>

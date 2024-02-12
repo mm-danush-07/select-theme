@@ -21,27 +21,63 @@
         "text_alignment": "start"
       }
     },
-    "custom_product_slider_XaQnQM": {
+    "custom_product_slider_zGz9dL": {
       "type": "custom-product-slider",
       "settings": {
         "section_heading": "Individual Styles Redefined",
         "product_list": [
           "black-stripe-spring-oxford-shirt",
-          "denim-chore-coat-black",
-          "columbia-tee-worn-olive",
-          "chore-coat-brown-duck",
           "carhartt-coat-black",
+          "columbia-tee-worn-olive",
+          "denim-chore-coat-black",
           "gritty-jackson-black-forest",
           "highland-tee-white",
-          "highland-tee-worn-black"
+          "highland-tee-worn-black",
+          "jude-navy-chevron-shirt",
+          "lean-dean-dry-gentle-worn",
+          "lean-dean-plain-stone"
         ],
         "padding_top": 0,
         "padding_bottom": 64
+      }
+    },
+    "shop_with_look_KLwFYM": {
+      "type": "shop-with-look",
+      "blocks": {
+        "product_content_AgUxcz": {
+          "type": "product-content",
+          "settings": {
+            "product": "carhartt-coat-black",
+            "left_position": 58,
+            "top_position": 32
+          }
+        },
+        "product_content_N7a667": {
+          "type": "product-content",
+          "settings": {
+            "product": "gritty-jackson-black-forest",
+            "left_position": 20,
+            "top_position": 74
+          }
+        }
+      },
+      "block_order": [
+        "product_content_AgUxcz",
+        "product_content_N7a667"
+      ],
+      "settings": {
+        "section_background": "#f5f5f7",
+        "title_text": "Look of the Day",
+        "image": "shopify:\/\/shop_images\/Rectangle_91.webp",
+        "image_position": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "custom_image_banner_GcwwPC",
-    "custom_product_slider_XaQnQM"
+    "custom_product_slider_zGz9dL",
+    "shop_with_look_KLwFYM"
   ]
 }

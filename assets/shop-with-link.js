@@ -1,8 +1,8 @@
-class SplideSlider extends HTMLElement {
+class ShopupSlider extends HTMLElement {
   constructor() {
     super();
     this.splideEl = this.querySelector(".splide");
-    this.options = JSON.parse(this.querySelector('script').textContent)
+    this.options = JSON.parse(this.querySelector("script").textContent);
     console.log(this.options);
     this.mountSplider();
   }
@@ -12,4 +12,4 @@ class SplideSlider extends HTMLElement {
   }
 }
 
-customElements.define("splide-slider", SplideSlider);
+customElements.define("shop-up-slider", ShopupSlider);

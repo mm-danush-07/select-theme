@@ -4,6 +4,42 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "text_fE8hne": {
+          "type": "text",
+          "settings": {
+            "heading": "Credits",
+            "subtext": "<p>Special thanks to <a href=\"https:\/\/shopthegoon.com\/\" target=\"_blank\" title=\"https:\/\/shopthegoon.com\/\">Goon <\/a>for generously providing us with their stunning product imagery. Kindly visit their website to make real purchases of their products.<\/p>"
+          }
+        },
+        "link_list_nPWhXA": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_R9Q3Pj": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Starter Sites",
+            "menu": "footer"
+          }
+        },
+        "link_list_gpqbNi": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "text_fE8hne",
+        "link_list_nPWhXA",
+        "link_list_R9Q3Pj",
+        "link_list_gpqbNi"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
