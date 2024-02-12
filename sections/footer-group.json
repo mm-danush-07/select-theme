@@ -11,10 +11,18 @@
             "heading": "Starter Sites",
             "menu": "footer"
           }
+        },
+        "text_fE8hne": {
+          "type": "text",
+          "settings": {
+            "heading": "Credits",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
         }
       },
       "block_order": [
-        "link_list_R9Q3Pj"
+        "link_list_R9Q3Pj",
+        "text_fE8hne"
       ],
       "settings": {
         "color_scheme": "scheme-1",
