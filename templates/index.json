@@ -41,6 +41,56 @@
         "padding_bottom": 64
       }
     },
+    "collection_list_WKeUnW": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_elements_kpDRdD": {
+          "type": "collection-elements",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/07-shirts-hover.webp",
+            "block_button_text": "Shirts",
+            "block_button_link": ""
+          }
+        },
+        "collection_elements_9CznM6": {
+          "type": "collection-elements",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/05-t_shirts-hover.webp",
+            "block_button_text": "Shirts",
+            "block_button_link": ""
+          }
+        },
+        "collection_elements_Acn3UY": {
+          "type": "collection-elements",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/07-bottoms-hover.webp",
+            "block_button_text": "Bottoms",
+            "block_button_link": ""
+          }
+        },
+        "collection_elements_8yJVdj": {
+          "type": "collection-elements",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-tops-hover.webp",
+            "block_button_text": "Tops",
+            "block_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_elements_kpDRdD",
+        "collection_elements_9CznM6",
+        "collection_elements_Acn3UY",
+        "collection_elements_8yJVdj"
+      ],
+      "settings": {
+        "title_text": "Shop By Category",
+        "button_text": "",
+        "button_link": "",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    },
     "shop_with_look_KLwFYM": {
       "type": "shop-with-look",
       "blocks": {
@@ -69,7 +119,6 @@
         "section_background": "#f5f5f7",
         "title_text": "Look of the Day",
         "image": "shopify:\/\/shop_images\/Rectangle_91.webp",
-        "image_position": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -78,6 +127,7 @@
   "order": [
     "custom_image_banner_GcwwPC",
     "custom_product_slider_zGz9dL",
+    "collection_list_WKeUnW",
     "shop_with_look_KLwFYM"
   ]
 }

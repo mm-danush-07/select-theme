@@ -1,7 +1,8 @@
 
 {{ 'shop-with-look.css' |  asset_url |  stylesheet_tag }}
 
-<script src="{{  "shop-with-link.js" | asset_url }}" defer></script>
+<script src="{{  "shop-with-look.js" | asset_url }}" defer></script>
+
 {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -32,43 +33,49 @@
 
 <div class="shop-with-look padding-{{ section.id }}">
     <div class="page-width">
+      {% if section.settings.title_text != blank %}
       <div><h2 class="h2">
-{{ section.settings.title_text }}
-      </h2>  </div>
+          
+          {{ section.settings.title_text }}
+          </h2>  </div>
+        {% endif %}
         <div class="grid grid--1-col grid--2-col-tablet grid--2-col-desktop background-{{ section.id }}">
           <div class="grid__item">
 
           <div class="shop-look__image">
             {% if section.settings.image  != blank %}
-        <div >
+          <div >
           {%  render 'responsive-picture'  desktopImage:section.settings.image, mobileImage:section.settings.mobile_image, class: "media media--square" %}   
-        </div>
-              
-              {% else %}
-              <div class="media media--square">
-              {{ 'image' |  placeholder_svg_tag }}
-              </div>
+        </div> 
+        {% else %}
+          <div class="media media--square">
+            {{ 'image' |  placeholder_svg_tag }}
+          </div>
             {% endif %}
-           {% for block in section.blocks %}
-                <div class="shop-look__dot  shop-look-dot__position-{{ block.id }}" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
-                        <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
-                    </svg>
-                </div>
-              {% endfor %}
+      {% for block in section.blocks %}
+           {% if block != blank %}
+         <div class="shop-look__dot shop-look-dot__position-{{ block.id }}" data-slide-index="{{ forloop.index0 }}" >
+          
+         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
+          <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
+        </svg>
+      
+              </div>
+          {% endif %}
+      {% endfor %}
 
           </div>
-
           </div>
-
-          <div class="grid__item">
-<shop-up-slider>
+<div class="grid__item">
+  <shop-up-slider>
   <script>
     {
-      "type": "slide",
+      "type": "loop",
       "perPage": 1,
       "pagination": false,
-      "perMove": 1
+      "perMove": 1,
+      "autoplay": true,    
+      "interval": 3000
     }
   </script>
   
@@ -78,15 +85,17 @@
         
         {% for block in section.blocks %}
           {% assign product = all_products[block.settings.product] %}
-          <li class="splide__slide">
-            <div class="shop-with-look__slider-content">
-
-              {% render 'responsive-picture' desktopImage:product.featured_image, class: "media media--square" %}
-                {{ product.title }}
-                {{ product.vendor }}
-                {{ product.price |  money_without_trailing_zeros}}
-            </div>
-            </li>
+          {% if product != blank %}
+            <li class="splide__slide shop-with-look__slider-content">
+              <a href="{{ product.url }}" class="full-unstyled-link">
+  
+                {% render 'responsive-picture' desktopImage:product.featured_image, class: "media media--square product-card" %}
+                  <h2 class="h3">{{ product.title }}</h2>
+                  <h2 class="h4">{{ product.vendor }}</h2>
+                 <h2 class="h3">{{ product.price |  money_without_trailing_zeros}}</h2> 
+              </a>
+              </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
@@ -101,7 +110,6 @@
     </div>
 
 </div>
-
 
 {% schema %}
 {
@@ -131,15 +139,6 @@
             "id": "mobile_image",
             "info": "Mobile image size (450*450)"
         },
-         {
-        "type": "select",
-        "id": "image_position",
-        "label": "Image Position",
-        "options": [
-          { "value": "left", "label": "Left" },
-          { "value": "right", "label": "Right" }
-        ]
-      },
       {
         "type": "header",
         "content": "Section padding"

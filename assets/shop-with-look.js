@@ -3,6 +3,7 @@ class ShopupSlider extends HTMLElement {
     super();
     this.splideEl = this.querySelector(".splide");
     this.options = JSON.parse(this.querySelector("script").textContent);
+   
     console.log(this.options);
     this.mountSplider();
   }

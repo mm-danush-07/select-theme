@@ -1,19 +1,21 @@
-.shop-look__image{
-    position: relative;
+.shop-look__image {
+  position: relative;
 }
-
 
 .shop-look__dot {
-    height: 3.4rem;
-    width: 3.4rem;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: white;
+  height: 3.4rem;
+  width: 3.4rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.shop-with-look__slider-content{
-    padding: 90px;
+.shop-with-look__slider-content {
+  padding: 10% 24% 0 24%;
+  margin-left: 148.802px;
+  margin-right: 148.802px;
+  height: 100%;
 }

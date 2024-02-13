@@ -1,0 +1,97 @@
+{{ 'section-custom-brands.css' | asset_url | stylesheet_tag }}
+{% style %}
+  .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+    }
+  @media (min-width: 750px) {
+      .padding-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+{% endstyle %}
+<div class="custom-brands padding-{{ section.id }}">
+  <div class="page-width">
+    <div class="custom-brands">
+        {% if section.settings.section_heading != blank %}
+            
+            <h2 class="h4 custom-brands__section-heading">{{ section.settings.section_heading }}</h2>
+        {% endif %}
+    </div>
+    <div class="custom-brands__image-container">
+      {% for block in section.blocks %}
+        <div class="custom-brands__image">
+            {% if block.settings.desktop_image != blank %}
+                
+                {% render 'responsive-picture', desktopImage: block.settings.desktop_image %}
+                {% else %}
+               {{ 'image' | placeholder_svg_tag }}
+            {% endif %}
+                
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Featured Brands",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Add Brands in Blocks"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "FEATURED BRANDS"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Brands Block",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Brand Image"
+        },
+        {
+          "type": "url",
+          "id": "brand_link",
+          "label": "Brand Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Brands"
+    }
+  ]
+}
+{% endschema %}
